@@ -115,6 +115,7 @@ h3 {
 }
 
 /* ---------- navbar ---------- */
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -122,9 +123,24 @@ h3 {
 	overflow: hidden;
 	background-color: var(--white);
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
-	width: 100%;
 	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 	z-index: 999;
+}
+
+.navbar-links {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navbar-right {
+	display: flex;
+	position: relative;
+	right: 0;
 }
 
 .navbar a {
@@ -136,6 +152,7 @@ h3 {
 	margin: 10px 0;
 	border-radius: 7px;
 }
+
 .contact-button a {
 	background-color: var(--blue);
 	color: var(--white);
@@ -155,9 +172,15 @@ h3 {
 	color: var(--white);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 	.navbar {
 		display: none;
+	}
+}
+
+@media (max-width: 1250px) {
+	.navbar-links {
+		left: 40%;
 	}
 }
 
@@ -210,7 +233,7 @@ h3 {
 	margin: 50px auto;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
 	.mobile-menu {
 		display: none;
 	}
@@ -829,8 +852,11 @@ h3 {
 }
 
 .values-section-header {
+	display: block;
+	position: relative;
 	text-align: center;
-	margin-bottom: -100px;
+	margin: auto;
+	top: 100px;
 }
 
 .lightbulb {
