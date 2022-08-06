@@ -38,7 +38,8 @@ a {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 60px;
+	font-weight: lighter;
 }
 
 h2 {
@@ -51,6 +52,8 @@ h3 {
 	color: var(--blue);
 	margin-bottom: 30px;
 }
+
+/* ------------- language ------------- */
 
 /*----- button -----*/
 .button {
@@ -639,6 +642,12 @@ h3 {
 }
 
 /*-------------------------- cases page styling -------------------*/
+
+.clients-slider-container h2,
+.projects-section h2 {
+	color: var(--black);
+	margin-bottom: 15px;
+}
 
 /* ------ the slider ------ */
 .clients-slider-container {
