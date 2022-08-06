@@ -1,0 +1,869 @@
+<!DOCTYPE html> <html lang="<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>Rheasoft</title>
+		<meta
+			name="description"
+			content="RHEASOFT - IT Development. We operate within a wide range of IT aspects, from application development, data migration, complex integrations, to cloud development."
+		/>
+		<meta
+			name="keywords"
+			content="Rheasoft, Rheasoft ApS, IT, IT Development, software, software develepment, cybersecurity, consulting, IT consulting, maintenance, system maintenance, application development, data migration, cloud development, system integration, user administration "
+		/>
+
+		<meta name="author" content="Karolina Anna Krysiak" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="/icons/favicon_white.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+	</head>
+
+	<body onhashchange="pageChange()">
+		<header>
+			<div class="navbar">
+				<a href="#home"><img class="logo" src="icons/logo.png" alt="Rheasoft logo" /></a>
+				<div class="navbar-links">
+					<a class="nav-hover" href="#home">Home</a>
+					<a class="nav-hover" href="#services">Services</a>
+					<a class="nav-hover" href="#cases">Cases</a>
+					<a class="nav-hover" href="#news">News</a>
+					<a class="nav-hover" href="#about">About us</a>
+				</div>
+				<div class="contact-button">
+					<a href="#contact">Contact us ></a>
+				</div>
+				<a href="index.html">eng</a>
+				<a>dan</a>
+			</div>
+
+			<div class="mobile-menu">
+				<div>
+					<div class="nav-item">
+						<a href="#home"><img class="mobile-logo" src="icons/logo.png" alt="Rheasoft logo" /></a>
+					</div>
+					<div class="burger-menu" onclick="openNav()">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<!-- The overlay -->
+				<div id="myNav" class="overlay">
+					<!-- Button to close the overlay navigation -->
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNavX()">&times;</a>
+
+					<!-- Overlay content -->
+					<div class="overlay-content">
+						<a href="#home">Home</a>
+						<a href="#services" onclick="closeNav()">Services</a>
+						<a href="#cases" onclick="closeNav()">Cases</a>
+						<a href="#news" onclick="closeNav()">News</a>
+						<a href="#about" onclick="closeNav()">About us</a>
+						<a class="mobile-contact-button" href="#contact" onclick="closeNav()">Contact us ></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-------------------------------------------------------- pages -------------------------------------------------------->
+
+		<!----------------- home page ----------------->
+		<section id="home" class="page">
+			<!-- landing section -->
+			<section class="landing-section">
+				<div class="welcome">
+					<h1>RHEASOFT</h1>
+					<h2 style="color: var(--blue)">IT Development</h2>
+					<p>
+						Vi arbejder indenfor en bred vifte af aspekter, fra applikationsudvikling, datamigrering, komplekse
+						integrationer til cloud deployment.
+					</p>
+					<p>Vi hjælper store og små virksomheder og offentlige myndigheder i hele europa.</p>
+					<p style="margin-bottom: 50px">Kan vi hjælpe dig?</p>
+
+					<a href="#services">
+						<button class="button" role="button">Se hvad vi kan hjælpe dig med!</button>
+					</a>
+				</div>
+			</section>
+
+			<!-- tiles sections with  links to other pages -->
+			<section class="two-parts-section">
+				<div class="half-two-parts-section">
+					<img src="img/kim-laptop.jpg" class="img-half" alt="Kim Gammelgaard with laptop" />
+				</div>
+				<div class="half-two-parts-section">
+					<div>
+						<h3>Cases</h3>
+						<p>
+							Application development, data migration, complex integrations, to cloud development. We develop and
+							maintain software that meets indyvidual needs of our clients
+						</p>
+					</div>
+
+					<a href="#cases">
+						<div class="button"><span>Læs mere ></span></div>
+					</a>
+				</div>
+			</section>
+
+			<section class="two-parts-section reverse">
+				<div class="half-two-parts-section">
+					<div>
+						<h3>About us</h3>
+						<p>
+							Rheasoft is a Danish IT company founded in 2018 and located in Aarhus, Denmark. Despite Rheasoft’s
+							relatively young age the company is run by a team with more than 60 years of experience in the
+							field between them and they have worked together for years.
+						</p>
+					</div>
+
+					<a href="#about">
+						<div class="button"><span>Læs mere ></span></div>
+					</a>
+				</div>
+				<div class="half-two-parts-section">
+					<img src="img/peter-board.png" class="img-half" alt="Peter Østergaard" />
+				</div>
+			</section>
+
+			<!-- Slideshow with testimonials container -->
+			<div class="slideshow-container inner-shadow">
+				<div class="testimonials-header">
+					<h2>Our customers</h2>
+					<h2>Customers opinions</h2>
+				</div>
+				<!-- Full-width images with number and caption text -->
+				<div class="testimonialsSlides fade">
+					<div class="testimonial-container">
+						<img src="img/profile.png" alt="photo of the client" class="client-profile" />
+						<span>
+							" *1 placeholder for testimonial* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. "</span
+						>
+					</div>
+					<div class="client-description">
+						<h5>Joe Doe</h5>
+						<h5>CEO</h5>
+						<h5>company name</h5>
+					</div>
+				</div>
+
+				<div class="testimonialsSlides fade">
+					<div class="testimonial-container">
+						<img src="img/profile.png" alt="photo of the client" class="client-profile" />
+						<span>
+							" *2 placeholder for testimonial* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. "</span
+						>
+					</div>
+					<div class="client-description">
+						<h5>Joe Doe</h5>
+						<h5>CEO</h5>
+						<h5>company name</h5>
+					</div>
+				</div>
+
+				<div class="testimonialsSlides fade">
+					<div class="testimonial-container">
+						<img src="img/profile.png" alt="photo of the client" class="client-profile" />
+						<span>
+							" *3 placeholder for testimonial* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. "</span
+						>
+					</div>
+					<div class="client-description">
+						<h5>Joe Doe</h5>
+						<h5>CEO</h5>
+						<h5>company name</h5>
+					</div>
+				</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev outer-shadow" onclick="nextTestimonial(-1)">&#10094;</a>
+				<a class="next outer-shadow" onclick="nextTestimonial(1)">&#10095;</a>
+				<!-- The dots/circles -->
+				<div class="testimonials-dots">
+					<span class="dot" onclick="currentTestimonial(1)"></span>
+					<span class="dot" onclick="currentTestimonial(2)"></span>
+					<span class="dot" onclick="currentTestimonial(3)"></span>
+				</div>
+			</div>
+			<br />
+
+			<section class="contact-section triangle-bg">
+				<div>
+					<h2>Are you interested in cooperation?</h2>
+					<span></span>
+					<h3>Contact us now!</h3>
+					<a href="#contact">
+						<button class="button button-reverse" role="button">Contact form ></button>
+					</a>
+				</div>
+			</section>
+		</section>
+
+		<!-------------------------- services page --------------------------->
+
+		<section id="services" class="page">
+			<!-- landing section -->
+			<section class="landing-section">
+				<div class="welcome">
+					<h1>IT Development</h1>
+					<p>
+						We operate within a wide range of IT aspects,from application development, data migration, complex
+						integrations, to cloud development.
+					</p>
+					<p>We help companies, big or small, and public authorities across Europe.</p>
+					<p>How can we help you?</p>
+				</div>
+			</section>
+
+			<!-- tiles sections with links to other pages -->
+			<section class="two-parts-section reverse">
+				<div class="half-two-parts-section">
+					<div>
+						<h3>Udvikling</h3>
+						<p>
+							Vi specialiserer os indenfor en bred vifte af IT-facetter. Vi kan derfor udvikle skræddersyede
+							IT-systemer der passer til netop jeres behov eller hjælpe med eksisterende løsninger, der skal have
+							en ekstra tand.
+						</p>
+						<p>
+							Vi foretrækker at bruge Kotlin/Java-familierne, men har erfaringer med mange andre sprog og
+							frameworks, og siger sjældent nej til nye udfordringer
+						</p>
+					</div>
+				</div>
+				<div class="half-two-parts-section">
+					<img src="img/kim-laptop.jpg" class="img-half" />
+				</div>
+			</section>
+
+			<section class="two-parts-section">
+				<div class="half-two-parts-section">
+					<img src="img/laptop.jpg" class="img-half" />
+				</div>
+				<div class="half-two-parts-section">
+					<div>
+						<h3>Vedligehold</h3>
+						<p>
+							Vi tilbyder vedligeholdelse af eksisterende systemer indenfor samme områder som vi tilbyder
+							udvikling.
+						</p>
+					</div>
+					<p>Vi kan hjælpe jer med at:</p>
+					<p>Blive up-to-date med sikkerheden</p>
+					<p>Optimere jeres IT-systemer</p>
+					<p>Få friske øje og erfarne hænder på opgaven</p>
+				</div>
+			</section>
+			<section class="two-parts-section reverse">
+				<div class="half-two-parts-section">
+					<div>
+						<h3>Rådgivning</h3>
+						<p>
+							Er I i tvivl om hvordan et projekt skal gribes an i forhold til IT? Eller mangler I ekspertise
+							indenfor et bestemt aspekt af IT?
+						</p>
+						<p>
+							Vi tilbyder blandt andet rådgivning i form af projektstyring når I mangler et par erfarne hænder
+							til at være tovholder.
+						</p>
+						<p>
+							Kontakt os hvis I står med et IT-projekt, så hjælper vi med finde den løsning der passer bedst til
+							jer.
+						</p>
+					</div>
+				</div>
+				<div class="half-two-parts-section">
+					<img src="img/question.jpg" class="img-half" />
+				</div>
+			</section>
+
+			<section class="triangles-section inner-shadow">
+				<img src="icons/triangle_left.png" class="left-triangle" />
+				<div class="services-examples">
+					<div>
+						<h2>Vi arbejder typisk med:</h2>
+						<span>Backend- og frontend-systemer </span>
+						<span>IT-sikkerhed </span>
+						<span>Visualisering af komplekse data </span>
+						<span>Data migrering </span>
+						<span>Komplekse integrationer </span>
+						<span>Bruger- og rollestyring</span>
+					</div>
+					<a href="#about">
+						<div class="button"><span>Læs mere ></span></div>
+					</a>
+				</div>
+				<img src="icons/triangle_right.png" class="right-triangle" />
+			</section>
+			<section class="contact-section triangle-bg">
+				<div>
+					<h2>Are you interested in cooperation?</h2>
+					<span></span>
+					<h3>Contact us now!</h3>
+					<a href="#contact">
+						<button class="button button-reverse" role="button">Contact form ></button>
+					</a>
+				</div>
+			</section>
+		</section>
+
+		<!------------------------------------ cases page ------------------------------->
+
+		<section id="cases" class="page">
+			<!-- landing section -->
+			<section class="landing-section">
+				<div class="welcome">
+					<h1>Cases</h1>
+					<h2>Our projects and clients</h2>
+					<p>
+						Within the years of our experience, we have worked with clients from different counteires helping them
+						solve their digital problems and help with develepment of their products. We help both big and small
+						companies, and public authorities across Europe.
+					</p>
+					<p>
+						We have built long-term partnerships based on trust by developing reliable software solutions, always
+						meeting or even exceeding our clients’ expectations.
+					</p>
+				</div>
+			</section>
+			<section class="clients-slider-container inner-shadow">
+				<h2>Our customers</h2>
+				<h3>The companies and institutions we have cooperated with</h3>
+
+				<div class="clients-slider">
+					<a href="https://cs-aware.com/" target="_blank" rel="noopener noreferrer">
+						<img src="icons/cs-aware.png" />
+						<h4>CS-Aware</h4>
+					</a>
+					<a href="https://tdc.dk/" target="_blank" rel="noopener noreferrer">
+						<img src="icons/TDC.png" />
+						<h4>TDC</h4>
+					</a>
+					<a href="https://cs-aware.com/" target="_blank" rel="noopener noreferrer">
+						<img src="icons/cs-aware.png" />
+						<h4>CS-Aware</h4>
+					</a>
+				</div>
+			</section>
+
+			<section class="projects-section">
+				<h2>Our projects</h2>
+				<h3>Major cases we have worked on</h3>
+				<div class="project-tiles-section">
+					<div class="project-tile">
+						<a href="https://cs-aware.com/demos/" target="_blank" rel="noopener noreferrer">
+							<img class="project-tile-img" src="icons/cs-logo.jpg" />
+							<div class="project-tile-description">
+								<div>
+									<img src="icons/cs-aware.png" />
+									<span class="project-tile-category">Cybersecurity</span>
+								</div>
+								<h4>CS-Aware</h4>
+								<p>
+									Ongoing software development support including a solution that helps with cybersecurity
+									issues
+								</p>
+								<span class="project-pseudo-link">Go to the project ></span>
+							</div>
+						</a>
+					</div>
+
+					<div class="project-tile">
+						<a
+							href="https://cs-aware.com/2022/03/21/cs-aware-corporation-has-successfully-acquired-a-new-horizon-europe-research-project/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img class="project-tile-img" src="icons/CS-AWARE-NEXT.png" />
+
+							<div class="project-tile-description">
+								<div>
+									<img src="icons/CS-AWARE-NEXT.png" />
+									<span class="project-tile-category">Cybersecurity</span>
+								</div>
+								<h4>CS-Aware NEXT</h4>
+								<p>
+									This project builds on the legacy of the CS-AWARE project, from which the CS-AWARE
+									Corporation originated. It focuses on the introduction of dynamic cybersecurity management
+									for organisations and local and regional supply chain networks, based on awareness and
+									collaboration.
+								</p>
+								<span class="project-pseudo-link">Go to the project ></span>
+							</div>
+						</a>
+					</div>
+
+					<div class="project-tile">
+						<a href="http://rheapitchboard.eu/" target="_blank" rel="noopener noreferrer">
+							<img class="project-tile-img" src="img/rheapitchboard-logo.jpg" />
+							<div class="project-tile-description">
+								<div>
+									<img src="icons/rheapitchboard.png" />
+									<span class="project-tile-category">Planning and management</span>
+								</div>
+								<h4>RheaPitchboard</h4>
+								<p>
+									A tool to manage everything from idea to scheduling, and from recording plan to documentation
+								</p>
+								<span class="project-pseudo-link">Go to the project ></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="contact-section triangle-bg">
+				<div>
+					<h2>Are you interested in cooperation?</h2>
+					<span></span>
+					<h3>Contact us now!</h3>
+					<a href="#contact">
+						<button class="button button-reverse" role="button">Contact form ></button>
+					</a>
+				</div>
+			</section>
+		</section>
+
+		<!----------------- news page ----------------->
+		<section id="news" class="page">
+			<section class="landing-section">
+				<div class="welcome">
+					<h1>News</h1>
+					<h2>Be up to date with our work</h2>
+				</div>
+			</section>
+			<div class="container">
+				<h1 class="heading">our daily posts</h1>
+
+				<div class="box-container">
+					<div class="box">
+						<iframe
+							src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6947844182266806272"
+							height="925"
+							width="504"
+							frameborder="0"
+							allowfullscreen=""
+							title="Embedded post"
+						></iframe>
+					</div>
+
+					<div class="box">
+						<iframe
+							src="https://www.linkedin.com/embed/feed/update/urn:li:share:6945654199149838336"
+							height="1233"
+							width="504"
+							frameborder="0"
+							allowfullscreen=""
+							title="Embedded post"
+						></iframe>
+					</div>
+
+					<div class="box">
+						<iframe
+							src="https://www.linkedin.com/embed/feed/update/urn:li:share:6940218362316636160"
+							height="1513"
+							width="504"
+							frameborder="0"
+							allowfullscreen=""
+							title="Embedded post"
+						></iframe>
+					</div>
+
+					<div class="box">
+						<iframe
+							src="https://www.linkedin.com/embed/feed/update/urn:li:share:6944931932090609665"
+							height="1027"
+							width="504"
+							frameborder="0"
+							allowfullscreen=""
+							title="Embedded post"
+						></iframe>
+					</div>
+
+					<div class="box">
+						<iframe
+							src="https://www.linkedin.com/embed/feed/update/urn:li:share:6925741262176153600"
+							height="774"
+							width="504"
+							frameborder="0"
+							allowfullscreen=""
+							title="Embedded post"
+						></iframe>
+					</div>
+				</div>
+
+				<div class="button" id="load-more">load more</div>
+			</div>
+			<section class="contact-section triangle-bg">
+				<div>
+					<h2>Are you interested in cooperation?</h2>
+					<span></span>
+					<h3>Contact us now!</h3>
+					<a href="#contact">
+						<button class="button button-reverse" role="button">Contact form ></button>
+					</a>
+				</div>
+			</section>
+		</section>
+
+		<!--------------------------------- about page ------------------------------>
+		<section id="about" class="page">
+			<!-- landing section -->
+			<section class="landing-section">
+				<div class="welcome">
+					<h1>About us</h1>
+					<h2>Who we are</h2>
+					<p>
+						Rheasoft is a Danish IT company founded in 2018 and located in Aarhus, Denmark. Despite Rheasoft’s
+						relatively young age the company is run by a team with more than 60 years of experience in the field
+						between them and they have worked together for years.
+					</p>
+				</div>
+			</section>
+
+			<!-- tiles sections with links to other pages -->
+			<section class="two-parts-section reverse">
+				<div class="half-two-parts-section">
+					<div>
+						<h3>Vision</h3>
+						<p>
+							IT can protect and promote citizenship by creating relevant, safe, green and ethically correct
+							IT-tools which make a difference for the citizens in our society. It is Rheasoft’s vision to be
+							part of this process.
+						</p>
+					</div>
+				</div>
+				<div class="half-two-parts-section">
+					<img src="img/eye.jpg" class="img-half" alt="image of eye" />
+				</div>
+			</section>
+
+			<section class="two-parts-section">
+				<div class="half-two-parts-section">
+					<img src="img/hands.jpg" class="img-half" />
+				</div>
+				<div class="half-two-parts-section">
+					<div>
+						<h3>Mission</h3>
+						<p>
+							Our mission is to create and maintain effective, safe and innovative IT solutions, which focus on
+							citizenship, general education, security, ethics, and green IT for big and small companies and
+							public authorities across Europe.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="triangles-section inner-shadow">
+				<img src="icons/triangle_left.png" class="left-triangle" />
+				<span
+					>We prioritise functionality and security in our work as we believe it is most crucial for the quality of
+					our work. Furthermore, we make room for innovation and finding new ways to address challenges. The world
+					is not static, why should we be?</span
+				>
+				<img src="icons/triangle_right.png" class="right-triangle" />
+			</section>
+			<section class="triangles-section triangle-bg" style="color: white">
+				<span
+					>From our office in Åbyhøj, Aarhus do we not only assist Danish clients but also international clients
+					such as municipalities like Roma Capitale, Italy and Larissa, Greece. We have the experience to jump
+					straight into larger complex enterprise IT systems, however, we also happily handle smaller projects
+					which just need a pair of experienced hands. We handle everything from application development, data
+					migration, complex integrations, to cloud deployment.</span
+				>
+			</section>
+			<section class="triangles-section inner-shadow">
+				<img src="icons/triangle_left.png" class="left-triangle" />
+				<span
+					>After participating in an EU Horizon2020 IT cybersecurity awareness project, we helped founding the
+					CS-AWARE Corporation OÜ and represent it as CS-AWARE Danmark in Denmark, which we are very pleased with
+					and proud of, as it aligns perfectly with our own values.</span
+				>
+				<img src="icons/triangle_right.png" class="right-triangle" />
+			</section>
+
+			<!-- vertical slider -->
+			<div class="values-section-header">
+				<h2>Our Values</h2>
+			</div>
+			<section class="v-slider triangle-bg">
+				<div class="lightbulb">
+					<img src="img/lightbulb.png" alt="image of a lightbulb" />
+					<span
+						>Thanks to
+						<a target="_blank" rel="noopener noreferrer" href="https://absurd.design">https://absurd.design</a>
+						for the illustration above
+					</span>
+				</div>
+				<div class="values-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+						<h3>Thoroughness</h3>
+						<p>
+							We are thorough in our work. Our projects are carefully executed and are made with future
+							maintenance in mind.
+						</p>
+					</div>
+
+					<div class="mySlides fade">
+						<h3>Dependable</h3>
+						<p>
+							We strive to make our customers and partners feel safe and comfortable with our work. We deliver
+							safe and secure products, we keep our promises, and we strive for open and transparent
+							communication.
+						</p>
+					</div>
+
+					<div class="mySlides fade">
+						<h3>Relevance for the Society</h3>
+						<p>
+							Our aim is to create products and solutions which benefit the society. Our IT solutions should give
+							the tools to help and protect the community and aid the general digital literacy and education.
+						</p>
+					</div>
+
+					<div class="mySlides fade">
+						<h3>Green IT</h3>
+						<p>
+							We are always on the lookout for possibilities to reduce the usage of the natural resources with
+							the use of IT. We create digital solutions to reduce the need for physical resources (gas, paper,
+							etc.), or we make existing systems more effective to stress the environment less.
+						</p>
+					</div>
+
+					<div class="mySlides fade">
+						<h3>Data Ethics</h3>
+						<p>
+							It is a priority to protect our customers' data and privacy, and to avoid misuse and abuse of their
+							data - and we know the importance of, and how to maintain high safety levels.
+						</p>
+					</div>
+
+					<!-- Next and previous buttons 
+					<a class="next-value" onclick="plusSlides(1)">&#10095;</a> -->
+				</div>
+
+				<!-- The dots/circles -->
+				<div class="value-header-div">
+					<span class="value-header" onclick="currentSlide(1)">Thoroughness</span>
+					<span class="value-header" onclick="currentSlide(2)">Dependable</span>
+					<span class="value-header" onclick="currentSlide(3)">Relevance for the Society</span>
+					<span class="value-header" onclick="currentSlide(4)">Green IT</span>
+					<span class="value-header" onclick="currentSlide(5)">Data Ethics</span>
+				</div>
+			</section>
+
+			<section class="profile-section inner-shadow">
+				<div>
+					<h3>CEO</h3>
+					<h4>Kim Gammelgaard</h4>
+					<p>
+						Co-founder of RheaSoft ApS. An experienced Project Manager, Key Account Manager, Team Leader,and IT
+						Solution Architect. More than 20 years of experience in the IT business, including executing, managing
+						and supervising projects, delivering and selling IT development, operations, products as well as being
+						team leader for more than a decade. A member of the The Danish ICT Industry Association IT Security
+						Committee.<br />
+						<br />
+						Former and current tasks: CEO at Rheasoft ApS, Key Account Manager and Solution Architect at
+						CloudPartners, Development domain, team leader and project manager at TDC, the Danish telco, for the
+						GIS/network infrastructure area. In his career, he has been working on and with international projects
+						for more than 35 years. He won the silver medal in the Michigan Science Olympics computer programming
+						competition in 1983 but wanted to open his world view before starting an IT career, so he became
+						Bachelor of Philosophy at Aarhus University, before going back to the IT business in 1998.
+					</p>
+				</div>
+				<img src="img/kim.png" alt="Kim Gammelgaard profile" />
+			</section>
+			<section class="profile-section reverse">
+				<img src="img/christian.png" alt="Christian Weithøft profile" />
+
+				<div>
+					<h3>SENIOR SOFTWARE DEVELOPER</h3>
+					<h4>Christian Weithøft</h4>
+					<p>
+						Specialises in Data migration, Data visualisation, Cloud Consulting Services, Data Management,
+						Enterprise Cloud Architectures, DevOps, Cloud Solutions
+					</p>
+				</div>
+			</section>
+			<section class="profile-section inner-shadow">
+				<div>
+					<h3>SENIOR SOFTWARE DEVELOPER & ARCHITECT</h3>
+					<h4>Peter Alfred "Palfred" Østergaard</h4>
+					<p>
+						Experienced in server and UI programming. Application developer for systems mainly using Java.
+						Experience with mentoring and teaching.
+						<br />
+						<br />
+
+						Specialises in system development, application development, Java, education, mentoring, programming
+						languages, code quality, refactoring, mobile device management (OMA DM).
+					</p>
+				</div>
+				<img src="img/peter.png" alt="Peter Østergaard profile" />
+			</section>
+			<section class="profile-section reverse">
+				<img src="img/line.png" alt="Line Sieg profile" />
+
+				<div>
+					<h3>COMMUNICATION & MARKETING</h3>
+					<h4>Line Thorsen Sieg</h4>
+					<p>
+						Master's degree in Corporate Communication at Aarhus BSS - Aarhus University and bachelor's degree in
+						International Business Communication at Aarhus University.
+					</p>
+					<p>Specialises in corporate communication, marketing, video editing as well as graphic design.</p>
+				</div>
+			</section>
+			<section class="contact-section triangle-bg">
+				<div>
+					<h2>Are you interested in cooperation?</h2>
+					<span></span>
+					<h3>Contact us now!</h3>
+					<a href="#contact">
+						<button class="button button-reverse" role="button">Contact form ></button>
+					</a>
+				</div>
+			</section>
+		</section>
+
+		<!--------------------------------------- CONTACT PAGE --------------------------------->
+		<section id="contact" class="page">
+			<!-- tiles sections with contact form -->
+			<section class="two-parts-section mobile-form reverse" style="height: 100vh">
+				<div class="half-two-parts-section triangle-bg contact-tile">
+					<h3>Are you interested in cooperation or have any other questions?</h3>
+					<br />
+					<h4>Write us an email</h4>
+					<span>Mail: <a href="mailto:mail@rheasoft.dk"> mail@rheasoft.dk</a></span> <br />
+					<h4>Call us</h4>
+					<span>Tel: <a href="tel:+4523362472"> +45 2336 2472</a></span
+					><br />
+					<h4>Or send us a message now -▻</h4>
+				</div>
+				<div class="half-two-parts-section wrapper">
+					<h2>Send us a Message</h2>
+					<form action="#">
+						<div class="dbl-field">
+							<div class="field">
+								<input type="text" name="name" placeholder="Enter your name" />
+								<i class="fas fa-user"></i>
+							</div>
+						</div>
+						<div class="dbl-field">
+							<div class="field">
+								<input type="text" name="email" placeholder="Enter your email" />
+							</div>
+						</div>
+						<div class="dbl-field">
+							<div class="field">
+								<input type="text" name="company" placeholder="Enter your company name" />
+							</div>
+						</div>
+						<div class="message">
+							<textarea placeholder="Write your message" name="message"></textarea>
+						</div>
+						<div class="button-area">
+							<button type="submit">Send Message</button>
+							<span></span>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<!-- small separating section -->
+			<section class="contact-separate-section inner-shadow">
+				<div>
+					<h2>Company info</h2>
+					<h3>Our office</h3>
+				</div>
+			</section>
+
+			<!-- tiles sections with map -->
+			<section class="two-parts-section">
+				<div class="half-two-parts-section triangle-bg contact-tile">
+					<div>
+						<h3>Address</h3>
+						<span>Rheasoft ApS </span>
+						<span>Klamsagervej 35, 1. </span>
+						<span>8230 Åbyhøj</span>
+						<span>Denmark</span>
+					</div>
+					<div>
+						<h3>CVR</h3>
+						<span>DK39909030</span>
+					</div>
+				</div>
+				<div class="half-two-parts-section" style="background-color: var(--black)">
+					<div class="img-half">
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.google.com/maps/place/RheaSoft+ApS/@56.1413162,10.1530371,17z/data=!3m1!4b1!4m5!3m4!1s0x464c6bb301d17f3b:0xff29f914437a58fe!8m2!3d56.1413162!4d10.1530371"
+						>
+							<img src="img/map.svg" alt="image of map with pin" />
+						</a>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!----------------- FOOTER ----------------->
+		<footer>
+			<div class="footer-elements">
+				<div class="footer-element text-center">
+					<h4>Menu</h4>
+					<a href="#">Home</a>
+					<a href="#services">Services</a>
+					<a href="#cases">Cases</a>
+					<a href="#news">News</a>
+					<a href="#about">About</a>
+				</div>
+				<div class="footer-element text-center">
+					<h4>Contact</h4>
+					<span>Mail: <a href="mailto:mail@rheasoft.dk">mail@rheasoft.dk</a></span>
+					<span>Tel: <a href="tel:+4523362472">+45 2336 2472</a></span>
+					<span
+						>Rheasoft ApS <br />
+						Klamsagervej 35, 1.<br />
+						8230 Åbyhøj<br />
+						Denmark</span
+					>
+				</div>
+				<div class="footer-element footer-some">
+					<h4>Social Media</h4>
+					<a href="https://www.linkedin.com/company/rheasoft/about/">
+						<div>
+							<img src="icons/linkedin.svg" alt="linkedin logo" target="_blank" rel="noopener noreferrer" />
+							<span>RheaSoft ApS</span>
+						</div>
+					</a>
+					<a href="https://www.linkedin.com/company/cs-aware-danmark/">
+						<div>
+							<img src="icons/linkedin.svg" alt="linkedin logo" target="_blank" rel="noopener noreferrer" />
+							<span>CS-AWARE Corporation - Danmark</span>
+						</div>
+					</a>
+					<a href="https://twitter.com/RheaPitchboard">
+						<div>
+							<img src="icons/twitter.svg" alt="linkedin logo" target="_blank" rel="noopener noreferrer" />
+							<span>RheaPitchboard</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- SPA functionality  -->
+		<script src="js/spa.js"></script>
+		<!-- main js file -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
